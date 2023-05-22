@@ -3,6 +3,10 @@ from imutils import face_utils
 import imutils
 import dlib
 import cv2
+import pygame
+
+pygame.init()
+song = pygame.mixer.Sound('audio_alert.wav')
 
 def eye_aspect_ratio(eye):
 	A = distance.euclidean(eye[1], eye[5])
